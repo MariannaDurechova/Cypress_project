@@ -1,9 +1,11 @@
+
+
 it('name', ( )=> {
     cy.visit('https://www.mzv.sk/cestovanie_a_konzularne_info/registracia-pred-cestou-do-zahranicia?p_auth=M0p5JOjy&p_p_id=ExternalDangerAbroad_WAR_ExternalDangerAbroadPortlet&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-3&p_p_col_count=1&_ExternalDangerAbroad_WAR_ExternalDangerAbroadPortlet_command=showNewEformAction')
 
     cy.get('#dijit_form_Button_0').click();
 
-    cy.get('#applicant_0_name').type('Marianna');
+    cy.get('#applicant_0_name').input('Marianna');
 
     cy.get('#applicant_0_surname').type('Dur')
     cy.get('#applicant_0_dateOfBirth').click()
